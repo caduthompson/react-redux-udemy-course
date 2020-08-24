@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom'
 import React from 'react' // To use JSX
 
 import Primeiro from './components/basics/Primeiro'
-
-const tag = <strong>Hello React!</strong>;
+import ComParametro from './components/basics/ComParametro'
 
 // Using JSX '<div>'
 ReactDOM.render( 
-  <div> 
+  <div id="app"> 
     <Primeiro></Primeiro>
+    <ComParametro
+      titulo = "Student Situation"
+      student = "Thompson" 
+      point = {9.0} />
   </div>,
   document.getElementById('root')
 );
